@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans"/>
+</head>
+    
+<body>
+<main class="container">
+    <div class="inputBox">
+    <input type="text" placeholder="City, Country Code" id="searchField"> 
+   
+    <div class="input">
+        <select id="lang" onchange="langOption()">
+        <option value="eng">English</option>
+        <option value="fr">French</option>
+        <option value="ru">Russian</option>
+        <option value="sp">Spanish</option>
+        <option value="ar">Arabic</option>
+        <option value="ja">Japanese</option>
+        <option value="pt">Portuguese</option>
+        <option value="no">Norwegian</option>
+        <option value="nl">Dutch</option>
+        <option value="la">Latvian</option>
+        </select>
+    </div>
+    <div class="input">
+        <button type="button" id="celsius">&#176;C</button>
+        <button type="button" id="fahrenheit">&#176;F</button>
+    </div>
+        <div class="input"> 
+            <button type="submit" id="searchBtn" >Search</button>
+        </div>
+    </div>
+    
+        <div class="weatherData">
+            <h1 id="city-name"></h1> 
+            <h1 id="country-code"></h1>
+            <div><img id="weather-icon"></div>
+            <div id="weather-description"></div>
+            <div id="temp"></div>
+        </div>
+
+        <div class="moreWeatherData">
+            <div class="additionalData" id="humidity"></div>
+            <div class="additionalData" id="wind-speed"></div>
+            <div class="additionalData" id="clouds"></div>
+            <div class="additionalData" id="pressure"></div>
+        </div>
+    
+    
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
